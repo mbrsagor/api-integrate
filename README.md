@@ -1,6 +1,12 @@
 # API-Integrate
 
-> The project basically backend restfull `API` integrate using Redux and context-types & hooks.
+> The project basically backend restfull `API` integrate and `authentication system` using Redux and context-types & hooks.
+
+#### Table of contents
+- Redux
+- Content-API
+- Hooks
+- Next.JS
 
 ###### How to run the project locally:
 Open your terminal and run the command `git clone https://github.com/mbrsagor/api-integrate.git`
