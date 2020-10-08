@@ -10,7 +10,6 @@ class App extends Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <h2>API Integrat</h2>
               <Login />
             </div>
           </div>
