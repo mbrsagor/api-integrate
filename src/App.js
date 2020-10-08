@@ -6,7 +6,13 @@ class App extends Component {
     return (
       <>
         <Header />
-        <h2>API Integrat</h2>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <h2>API Integrat</h2>
+            </div>
+          </div>
+        </div>
       </>
     )
   }
