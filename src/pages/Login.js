@@ -13,8 +13,7 @@ class Login extends Component {
 
         this.state = {
             username: "",
-            password: "",
-            message: ""
+            password: ""
         };
     }
 
@@ -40,12 +39,9 @@ class Login extends Component {
                 const expirationDate = new Date(new Date().getTime() + 3600 * 1000);
                 localStorage.setItem('token', token);
                 localStorage.setItem('expirationDate', expirationDate);
-                // this.props.history.push('/dashboard');
                 console.log(`Token: ${token}`);
             }, error => {
-                this.setState({
-                    'message': 'Someting went wrong, retry or contact administrator.'
-                })
+                console.log('Sorry!');
             }
         )
     }
@@ -60,9 +56,6 @@ class Login extends Component {
                             <div className="card border-info">
                                 <div className="card-header text-center"> Sign in to continue </div>
                                 <div className="card-body">
-                                    <div className="logo text-center">
-                                        <img className="rounded-circle" src="https://placeimg.com/128/128/tech/sepia" alt="logo"/>
-                                    </div>
                                     <form onSubmit={this.handleLogin} className="form-signin mt-3">
                                         <div className="from-control">
                                             <label htmlFor="usenrame">Username</label>
@@ -92,7 +85,7 @@ class Login extends Component {
                                     </form>
                                 </div>
                             </div>
-                            <a href="#0" className="float-right">Create an account </a>
+                            <a href="/" className="float-right">Create an account </a>
                         </div>
                     </div>
                 </div>
