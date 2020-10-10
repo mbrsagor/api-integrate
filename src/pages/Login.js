@@ -41,7 +41,7 @@ class Login extends Component {
                 localStorage.setItem('expirationDate', expirationDate);
                 console.log(`Token: ${token}`);
             }, error => {
-                console.log('Sorry!');
+                console.log(`Eoor -> ${error}`);
             }
         )
     }
